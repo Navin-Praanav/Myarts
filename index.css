@@ -1,0 +1,576 @@
+*,*::before,*::after
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.background
+{
+    /* background: url("images/artmain.jpg"); */
+    background-repeat: no-repeat;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: radial-gradient( #0F2027 , #203A43,#2c5364); */
+    background-image: radial-gradient(#2c5364,#203A43, #0F2027);
+}
+.info
+{
+    padding: 1.4rem 4rem 1.4rem 4rem;
+    border-radius: 10px;
+    z-index: 2;
+    /* background-color: whitesmoke; */
+}
+.info img
+{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 100%;
+    border: 3px solid white;
+    
+}
+.info div{
+    padding-top: 0.5rem;
+    width: 20rem
+}
+
+.info div p
+{
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.5rem;;
+    margin-top: 0.5rem;
+}
+.center
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.materials
+{
+    height: 150vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.materials img
+{
+    height: 460px;
+    width: 300px;
+}
+
+.materials div
+{
+    padding:1.5rem;
+    margin-top: 0.5rem;
+}
+.materialused h3
+{
+    padding: 5px;
+    
+}
+.materialused div
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.blush
+{
+    display: flex;
+    align-items: flex-end;
+}
+.materialused
+{
+    /* background-color: whitesmoke; */
+    /* border-radius: 1rem;    */
+    width: 70%;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.materialused p
+{
+    margin-left:16px;
+}
+
+.drawings
+{
+    padding: 2rem 0 2rem 0;
+    height: 800vh;
+    width: 100%;
+    background-image: linear-gradient( #0F2027 , #203A43,#2c5364);
+
+}
+.drawings img
+{
+    height: 560;
+    width: 400px;
+}
+.drawings>div
+{
+    margin:5rem 0 5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.drawings>div h1
+{
+    color:white;
+
+}
+
+.i
+{
+    color:white;
+}
+
+.i
+{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 500ms ease-in;
+}
+.drawings .fade-in
+{
+    transform: translateX(0);
+    opacity:100%;
+}
+
+.d
+{
+    
+    opacity: 0;
+    transform:translateX(100px);
+    transition: all 500ms ease-in;
+    transition-delay: 150ms;
+}
+.ali{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+}
+.images
+{
+    width: 40%;
+}
+.ali h3
+{
+    padding: 1rem;
+}
+.drawings .fade-in2
+{
+    transform: translateX(0);
+    color:white;
+    opacity:100%;
+}
+.test 
+{
+    height: 460px;
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.showcase
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    padding:2rem;
+    /* padding-block: 2rem; */
+    margin-inline: auto;
+    background-color: whitesmoke;
+}
+
+.test:hover
+{
+    transform: scale(110%);
+    transition: transform 60ms ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 1280px) 
+{
+    .materials
+    {
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space; */
+        width: 100%;
+        padding: 1rem;
+    }
+    .materials img
+    {
+        height: 360px;
+        width: 200px;
+    }
+    .materialused
+    {
+        width: 100%;
+    }
+    .blush
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .materialused div
+    {
+        margin-top: 1rem;
+    }
+
+    /* gallary  */
+
+    .drawings
+    {
+        padding: 2rem 0 2rem 0;
+        height: 700vh;
+        width: 100%;
+        background-image: linear-gradient( #0F2027 , #203A43,#2c5364);
+
+    }
+    .drawings img
+    {
+        height: 440px;
+        width: 280px;
+
+    }
+    .drawings>div
+    {
+        margin:1rem 0 1rem 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .drawings>div h1
+    {
+        color:white;
+
+    }
+
+    .i
+    {
+        color:white;
+    }
+
+    .i
+    {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 500ms ease-in;
+    }
+    .drawings .fade-in
+    {
+        transform: translateX(0);
+        opacity:100%;
+    }
+
+    .d
+    {
+        
+        opacity: 0;
+        transform:translateX(100px);
+        transition: all 500ms ease-in;
+        transition-delay: 150ms;
+    }
+    .ali{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .ali h3
+    {
+        padding: 0.5rem;
+    }
+    .drawings .fade-in2
+    {
+        transform: translateX(0);
+        color:white;
+        opacity:100%;
+    }
+
+    /* other drawings */
+    .showcase
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        padding:2rem;
+        /* padding-block: 2rem; */
+        margin-inline: auto;
+        background-color: whitesmoke;
+    }
+    .test 
+    {
+        height: 360px;
+        width: 250px;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+}
+
+@media only screen and (max-width: 1000px) 
+{
+    .materials
+    {
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space; */
+        width: 100%;
+        padding: 1rem;
+    }
+    .materials img
+    {
+        height: 360px;
+        width: 200px;
+    }
+    .materialused
+    {
+        width: 100%;
+    }
+    .blush
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .materialused div
+    {
+        margin-top: 1rem;
+    }
+
+    /* gallary  */
+
+    .drawings
+    {
+        padding: 2rem 0 2rem 0;
+        height: 500vh;
+        width: 100%;
+        background-image: linear-gradient( #0F2027 , #203A43,#2c5364);
+
+    }
+    .drawings img
+    {
+        height: 360px;
+        width: 200px;
+
+    }
+    .drawings>div
+    {
+        margin:1rem 0 1rem 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .drawings>div h1
+    {
+        color:white;
+
+    }
+
+    .i
+    {
+        color:white;
+    }
+
+    .i
+    {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 500ms ease-in;
+    }
+    .drawings .fade-in
+    {
+        transform: translateX(0);
+        opacity:100%;
+    }
+
+    .d
+    {
+        
+        opacity: 0;
+        transform:translateX(100px);
+        transition: all 500ms ease-in;
+        transition-delay: 150ms;
+    }
+    .ali{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .ali h3
+    {
+        padding: 0.5rem;
+    }
+    .drawings .fade-in2
+    {
+        transform: translateX(0);
+        color:white;
+        opacity:100%;
+    }
+
+    /* other drawings */
+    .showcase
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        padding:2rem;
+        /* padding-block: 2rem; */
+        margin-inline: auto;
+        background-color: whitesmoke;
+    }
+    .test 
+    {
+        height: 360px;
+        width: 200px;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+}
+@media only screen and (max-width: 700px) 
+{
+    .materials
+    {
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space; */
+        width: 100%;
+        padding: 1rem;
+    }
+    .materials img
+    {
+        height: 260px;
+        width: 100px;
+    }
+    .materialused
+    {
+        width: 100%;
+    }
+    .blush
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .materialused div
+    {
+        margin-top: 1rem;
+    }
+
+    /* gallary  */
+
+        .drawings
+    {
+        padding: 2rem 0 2rem 0;
+        height: 500vh;
+        width: 100%;
+        background-image: linear-gradient( #0F2027 , #203A43,#2c5364);
+
+    }
+    .drawings img
+    {
+        height: 360px;
+        width: 180px;
+
+    }
+    .drawings>div
+    {
+        margin:1rem 0 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .drawings>div h1
+    {
+        color:white;
+
+    }
+
+    .i
+    {
+        color:white;
+    }
+
+    .i
+    {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 500ms ease-in;
+    }
+    .drawings .fade-in
+    {
+        transform: translateX(0);
+        opacity:100%;
+    }
+
+    .d
+    {
+        
+        opacity: 0;
+        transform:translateX(100px);
+        transition: all 500ms ease-in;
+        transition-delay: 150ms;
+    }
+    .ali{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+    }
+    .images
+    {
+        width: 40%;
+    }
+    .ali h3
+    {
+        padding: 0.5rem;
+    }
+    .drawings .fade-in2
+    {
+        transform: translateX(0);
+        color:white;
+        opacity:100%;
+    }
+    .movlft
+    {
+        margin-left: 5rem;
+    }
+
+    /* other drawings */
+    .showcase
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+        padding:2rem;
+        /* padding-block: 2rem; */
+        margin-inline: auto;
+        background-color: whitesmoke;
+    }
+    .test 
+    {
+        height: 260px;
+        width: 100px;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+}
