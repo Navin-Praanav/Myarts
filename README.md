@@ -17,7 +17,7 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-  Hi, Myself Navin Praanav and I made this blog to show my drawings.
+  Hi 👋, Myself Navin Praanav and I made this blog to show my drawings.
   
   
 TECHNOLOGIES
